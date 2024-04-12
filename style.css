@@ -11,11 +11,14 @@ p {
     font-weight: bold;
 }
 
+label {
+    display: none;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: rgb(239, 188, 155); */
     background-image: linear-gradient(rgb(239, 188, 155), white);
 }
 
@@ -41,8 +44,22 @@ p {
 }
 
 .imgBox {
-    height: 550px;
+    height: 500px;
     width: 500px;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.like-dislike {
+    display: flex;
+    gap: 400px;
+    align-items: center;
+}
+
+#urlInput {
+    display: none;
+}
+
+.submit {
+    display: none;
 }
