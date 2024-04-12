@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
     <title>Photo Gallery</title>
   </head>
   <body>
     <header class="header">
       <p>Umang Diwan</p>
       <h1>Photo Gallery App</h1>
-      <button type="button">Submit Photo</button>
+      <form id="imgForm">
+        <button type="button" id="new-photo">Submit Photo</button>
+      </form>
     </header>
 
     <main class="main">
@@ -72,5 +73,6 @@
         </div>
       </div>
     </main>
+    <script src="app.js" defer></script>
   </body>
 </html>

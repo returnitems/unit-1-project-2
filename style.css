@@ -42,3 +42,7 @@ p {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+#new-photo {
+    /* display: block; */
+}
