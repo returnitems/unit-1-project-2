@@ -45,6 +45,12 @@ const addPic = (event) => {
 
     imageSrc.src = urlInput.value;
     container.appendChild(photoCard);
+
+    urlInput.value = "";
+    newPhoto.style.display = "block";
+    urlLabel.style.display = "none";
+    urlInput.style.display = "none";
+    submitPic.style.display = "none";
   }
 };
 
