@@ -56,7 +56,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   height: 600px;
   width: 650px;
   border: 1px solid black;
@@ -83,6 +83,13 @@ label {
 
 .submit {
   display: none;
+}
+
+.fa-heart {
+    color: red;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
 }
 
 .hide {

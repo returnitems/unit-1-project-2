@@ -5,12 +5,8 @@ const urlInput = document.querySelector("#urlInput");
 const submitPic = document.querySelector(".submit");
 const container = document.querySelector("main");
 const photoCards = document.querySelectorAll(".photo-card");
-// const likeButton = document.querySelectorAll(".likeButton");
-// const disButton = document.querySelectorAll(".dislikeButton");
-// const likeIcon = document.querySelector(".fa-solid");
-// const dislikeIcon = document.querySelector(".fa-regular");
-// const likeText = document.querySelector(".like-text");
-// const dislikeText = document.querySelector(".dislike-text");
+
+
 
 const newPic = () => {
   newPhoto.style.display = "none";
@@ -18,6 +14,8 @@ const newPic = () => {
   urlInput.style.display = "block";
   submitPic.style.display = "block";
 };
+
+
 
 const addPic = (event) => {
   // Learned that the reason a submitted link was not showing was because the page was reloading upon form submission.
@@ -61,6 +59,7 @@ const addPic = (event) => {
   }
 };
 
+
 // Using forEach to select each photo card and then grabbing the buttons and icons and changing the style class to show or hide
 photoCards.forEach(card => {
     const likeButton = card.querySelector(".likeButton");
@@ -83,7 +82,9 @@ photoCards.forEach(card => {
     })
 })
 
+
 newPhoto.addEventListener("click", newPic);
+
 
 submitPic.addEventListener("click", addPic);
 
