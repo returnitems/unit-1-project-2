@@ -14,9 +14,15 @@
   font-style: normal;
 }
 
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   display: grid;
-  background-image: url('./assets/pexels-rovenimagescom-949587.jpg');
+  background-image: url("./assets/pexels-rovenimagescom-949587.jpg");
 }
 
 p {
@@ -34,13 +40,14 @@ h1 {
 label {
   display: none;
   color: white;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 16px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 
 .main {
@@ -48,7 +55,6 @@ label {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .photo-card {
@@ -83,36 +89,54 @@ label {
 
 .submit {
   display: none;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 18px;
+}
+
+.likeButton {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 18px;
+}
+
+.dislikeButton {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 18px;
 }
 
 /* Settings for the animation upon button clicking */
 @keyframes expand {
-    0% {transform: scale(1); }
-    50% {transform: scale(15); }
-    100% {transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .fa-heart {
-    color: red;
-    animation: expand 3s ease;
-    font-size: 28px;
+  color: red;
+  animation: expand 3s ease;
+  font-size: 28px;
 }
 
 .fa-thumbs-down {
-    color: blanchedalmond;
-    animation: expand 3s ease;
-    font-size: 28px;
+  color: blanchedalmond;
+  animation: expand 3s ease;
+  font-size: 28px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: inline-block;
+  display: inline-block;
 }
 
 #new-photo {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 24px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 24px;
 }
