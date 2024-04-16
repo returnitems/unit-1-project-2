@@ -2,24 +2,45 @@
   box-sizing: border-box;
 }
 
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   display: grid;
+  background-image: url('./assets/pexels-rovenimagescom-949587.jpg');
 }
 
 p {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 28px;
+  font-family: "Jersey 10", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: white;
 }
 
 label {
   display: none;
+  color: white;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: linear-gradient(rgb(239, 188, 155), white);
+  
 }
 
 .main {
@@ -27,7 +48,7 @@ label {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: linear-gradient(white, rgb(251, 243, 213));
+  
 }
 
 .photo-card {
@@ -37,15 +58,15 @@ label {
   align-items: center;
   gap: 5px;
   height: 600px;
-  width: 550px;
+  width: 650px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgb(214, 218, 200);
+  background-color: black;
 }
 
 .imgBox {
   height: 500px;
-  width: 500px;
+  width: 600px;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -64,10 +85,15 @@ label {
   display: none;
 }
 
-#like {
+.hide {
     display: none;
 }
 
-#dislike {
-    display: none;
+.show {
+    display: inline-block;
+}
+
+#new-photo {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 24px;
 }

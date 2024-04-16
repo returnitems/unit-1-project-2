@@ -4,12 +4,13 @@ const urlLabel = document.querySelector("label");
 const urlInput = document.querySelector("#urlInput");
 const submitPic = document.querySelector(".submit");
 const container = document.querySelector("main");
-const likeButton = document.querySelector(".likeButton");
-const disButton = document.querySelector(".dislikeButton");
-const likeIcon = document.getElementById("like");
-const dislikeIcon = document.getElementById("dislike");
-const likeText = document.getElementById("like-text");
-const dislikeText = document.getElementById("dislike-text");
+const photoCards = document.querySelectorAll(".photo-card");
+// const likeButton = document.querySelectorAll(".likeButton");
+// const disButton = document.querySelectorAll(".dislikeButton");
+// const likeIcon = document.querySelector(".fa-solid");
+// const dislikeIcon = document.querySelector(".fa-regular");
+// const likeText = document.querySelector(".like-text");
+// const dislikeText = document.querySelector(".dislike-text");
 
 const newPic = () => {
   newPhoto.style.display = "none";
@@ -60,26 +61,29 @@ const addPic = (event) => {
   }
 };
 
+// Using forEach to select each photo card and then grabbing the buttons and icons and changing the style class to show or hide
+photoCards.forEach(card => {
+    const likeButton = card.querySelector(".likeButton");
+    const disButton = card.querySelector(".dislikeButton");
+    const likeIcon = card.querySelector(".fa-heart");
+    const dislikeIcon = card.querySelector(".fa-thumbs-down");
+
+    likeButton.addEventListener("click", function() {
+        likeIcon.classList.remove("hide");
+        likeIcon.classList.add("show");
+        likeButton.classList.add("hide");
+        disButton.classList.add("hide");
+    });
+
+    disButton.addEventListener("click", function() {
+        dislikeIcon.classList.remove("hide");
+        dislikeIcon.classList.add("show");
+        disButton.classList.add("hide");
+        likeButton.classList.add("hide");
+    })
+})
+
 newPhoto.addEventListener("click", newPic);
 
 submitPic.addEventListener("click", addPic);
 
-likeButton.addEventListener("mouseover", heart = () => {
-    likeText.style.display = "none";
-    likeIcon.style.display = "inline-block";
-});
-
-likeButton.addEventListener("mouseout", text = () => {
-    likeText.style.display = "inline-block";
-    likeIcon.style.display = "none";
-});
-
-disButton.addEventListener("mouseover", thumbDown = () => {
-    dislikeText.style.display = "none";
-    dislikeIcon.style.display = "inline-block";
-});
-
-disButton.addEventListener("mouseout", text = () => {
-    dislikeText.style.display = "inline-block";
-    dislikeIcon.style.display = "none";
-});

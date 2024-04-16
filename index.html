@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Used fontawesome to implement icons for like and dislike buttons -->
@@ -14,10 +18,10 @@
       <p>Umang Diwan</p>
       <h1>Photo Gallery App</h1>
       <form id="imgForm">
-        <label for="urlInput">Enter Imgur URL:</label>
+        <label for="urlInput">Enter Img URL:</label>
         <input type="url" id="urlInput" />
         <button type="submit" class="submit">Submit!</button>
-        <button type="button" id="new-photo">Submit Photo</button>
+        <button type="button" id="new-photo">Submit Your Photo!</button>
       </form>
     </header>
 
@@ -25,21 +29,27 @@
       <div class="photo-card">
         <img src="https://i.imgur.com/DvS1Pxy.jpg" class="imgBox" />
         <div class="like-dislike">
-          <button type="button" class="likeButton"><span id="like-text">Like</span> <i class="fa-solid fa-heart" id="like"></i></button> 
-          <button type="button" class="dislikeButton"><span id="dislike-text">Dislike</span> <i class="fa-regular fa-thumbs-down" id="dislike"></i></button> 
+          <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
+          <button type="button" class="dislikeButton">Dislike</button> 
         </div>
       </div>
       <div class="photo-card">
         <img src="https://i.imgur.com/S9Dgiq9.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
-          <button type="button" class="likeButton">Dislike</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
+          <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
       <div class="photo-card">
         <img src="https://i.imgur.com/AxdiMgX.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
@@ -47,6 +57,8 @@
         <img src="https://i.imgur.com/WLhalzv.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
@@ -54,6 +66,8 @@
         <img src="https://i.imgur.com/euCJYHR.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
@@ -61,6 +75,8 @@
         <img src="https://i.imgur.com/wgRbu6N.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
@@ -68,6 +84,8 @@
         <img src="https://i.imgur.com/ynxSd1O.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
@@ -75,6 +93,8 @@
         <img src="https://i.imgur.com/cGWL87C.jpg" class="imgBox" />
         <div class="like-dislike">
           <button type="button" class="likeButton">Like</button>
+          <i class="fa-solid fa-heart hide"></i>
+          <i class="fa-regular fa-thumbs-down hide"></i>
           <button type="button" class="dislikeButton">Dislike</button>
         </div>
       </div>
