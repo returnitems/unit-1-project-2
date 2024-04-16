@@ -4,6 +4,12 @@ const urlLabel = document.querySelector("label");
 const urlInput = document.querySelector("#urlInput");
 const submitPic = document.querySelector(".submit");
 const container = document.querySelector("main");
+const likeButton = document.querySelector(".likeButton");
+const disButton = document.querySelector(".dislikeButton");
+const likeIcon = document.getElementById("like");
+const dislikeIcon = document.getElementById("dislike");
+const likeText = document.getElementById("like-text");
+const dislikeText = document.getElementById("dislike-text");
 
 const newPic = () => {
   newPhoto.style.display = "none";
@@ -35,7 +41,7 @@ const addPic = (event) => {
     likeButton.textContent = "Like";
 
     const dislikeButton = document.createElement("button");
-    dislikeButton.className = "likeButton";
+    dislikeButton.className = "dislikeButton";
     dislikeButton.textContent = "Dislike";
 
     likeDislike.appendChild(likeButton);
@@ -57,3 +63,23 @@ const addPic = (event) => {
 newPhoto.addEventListener("click", newPic);
 
 submitPic.addEventListener("click", addPic);
+
+likeButton.addEventListener("mouseover", heart = () => {
+    likeText.style.display = "none";
+    likeIcon.style.display = "inline-block";
+});
+
+likeButton.addEventListener("mouseout", text = () => {
+    likeText.style.display = "inline-block";
+    likeIcon.style.display = "none";
+});
+
+disButton.addEventListener("mouseover", thumbDown = () => {
+    dislikeText.style.display = "none";
+    dislikeIcon.style.display = "inline-block";
+});
+
+disButton.addEventListener("mouseout", text = () => {
+    dislikeText.style.display = "inline-block";
+    dislikeIcon.style.display = "none";
+});
