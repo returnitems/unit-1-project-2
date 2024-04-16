@@ -85,11 +85,23 @@ label {
   display: none;
 }
 
+/* Settings for the animation upon button clicking */
+@keyframes expand {
+    0% {transform: scale(1); }
+    50% {transform: scale(15); }
+    100% {transform: scale(1); }
+}
+
 .fa-heart {
     color: red;
-    height: 50px;
-    width: 50px;
-    transition-duration: 2s;
+    animation: expand 3s ease;
+    font-size: 28px;
+}
+
+.fa-thumbs-down {
+    color: blanchedalmond;
+    animation: expand 3s ease;
+    font-size: 28px;
 }
 
 .hide {
